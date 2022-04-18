@@ -1,0 +1,25 @@
+{
+  "name": "nightwatch-report",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test1": "nightwatch --reporter html-reporter.js",
+    "test2": "nightwatch --reporter html-reporter2.js",
+    "generateReport": "allure generate ./allure-results --clean && allure open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^99.0.0",
+    "nightwatch": "^2.1.0",
+    "nightwatch-allure": "^1.2.0",
+    "nightwatch-html-reporter": "^2.0.6"
+  },
+  "devDependencies": {
+    "fs": "^0.0.1-security",
+    "handlebars": "^4.7.7",
+    "path": "^0.12.7"
+  }
+}
