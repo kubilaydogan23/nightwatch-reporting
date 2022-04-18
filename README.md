@@ -17,7 +17,7 @@ After test execution:
 
 **cover** theme sample
 
-<img src="https://raw.githubusercontent.com/jls/nightwatch-html-reporter/screenshots/screenshots/cover_success.png" width="750" height="450">
+<img src="images/awesome.png" width="750" height="450">
 
 </br></br>
 
