@@ -6,8 +6,8 @@
 After test execution: 
 > npm run generateReport
 
-<img src="screenshots/allure-report.png" width="550" height="350">
-![](screenshots/allure-report.png)
+<img src="images/allure-report.png" width="550" height="350">
+
 </br>
 
 ### `nightwatch-html-report`
@@ -24,6 +24,6 @@ After test execution:
 ### `nightwatch-html-report by Denis Denisov`
 > npm run test2
 
-<img src="/Users/kubilayd/Projects/nightwatch-report/screenshots/html-report.png" width="550" height="350">
+<img src="images/html-report.png" width="550" height="350">
 
 
