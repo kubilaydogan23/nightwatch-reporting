@@ -6,7 +6,7 @@
 After test execution: 
 > npm run generateReport
 
-<img src="images/allure-report.png" width="750" height="450">
+<img src="images/allure-report.png">
 
 </br>
 
@@ -17,7 +17,7 @@ After test execution:
 
 **cover** theme sample
 
-<img src="images/awesome.png" width="750" height="450">
+<img src="images/awesome.png">
 
 </br></br>
 
