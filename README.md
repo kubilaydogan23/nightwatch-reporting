@@ -24,7 +24,7 @@ After test execution:
 ### `nightwatch-html-report by Denis Denisov`
 > npm run test2
 
-<img src="images/html-report.png"
+<img src="images/html-report.png">
 
 </br></br>
 
