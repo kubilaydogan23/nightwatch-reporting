@@ -1,32 +1,13 @@
 ## Reports provided in this framework:
-</br>
 
-### `nightwatch-allure report`
-
-After test execution: 
-> npm run generateReport
-
-<img src="images/allure-report.png">
-
-</br>
-
-### `nightwatch-html-report`
-> npm run test1
+| Report | View |
+| :--- | :---:  |
+| Allure Report | <img src="images/allure-report.png" width="400"/> |
+| Nightwatch HTML Reporter | <img src="images/awesome.png" width="400"/>|
+| Html Report by Denis Denisov | <img src="images/html-report.png" width="400"/>|
+| Default Nightwatch Html Report | <img src="images/DEFAULT.png" width="400"/>|
 
 </br>
-
-**cover** theme sample
-
-<img src="images/awesome.png">
-
-</br></br>
-
-### `nightwatch-html-report by Denis Denisov`
-> npm run test2
-
-<img src="images/html-report.png">
-
-</br></br>
 
 # How to implement reports
 
@@ -47,7 +28,7 @@ module.exports = {
 };
 ```
 ➡️  Create a new script in package.json file
-```
+```js
 "scripts": {
     ...
     "generateReport": "allure generate ./allure-results --clean && allure open",
@@ -55,6 +36,18 @@ module.exports = {
   },
 ```
 ➡️  After test execution, enter `npm run generateReport`
+
+or
+
+```js
+"scripts": {
+    ...
+    "test": "nightwatch && npm run generateReport",
+    ...
+  },
+```
+➡️  `npm run test`
+
 
 </br>
 
@@ -65,7 +58,7 @@ module.exports = {
 ➡️  npm install -g nightwatch-html-reporter
 
 ➡️  Create a new file: `html-reporter.js` and add the following code
-```
+```js
 var HtmlReporter = require('nightwatch-html-reporter');
 
 var reporter = new HtmlReporter({
@@ -99,3 +92,4 @@ module.exports = {
 ➡️  Use `--reporter` option while running tests:  **nightwatch --reporter html-reporter.js**
 
 ➡️  Reports will be created under tests_output folder. 
+

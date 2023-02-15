@@ -2,7 +2,11 @@ module.exports = {
   src_folders: ["test"],
   globals_path: "globals/globals.js", 
   custom_commands_path: "./custom_commands",
-
+  
+  test_workers: {
+    enabled: true,
+  },
+  
   webdriver: {
     start_process: true, 
     server_path: 'node_modules/.bin/chromedriver',

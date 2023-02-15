@@ -4,18 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "npm run clean && nightwatch && npm run generateReport",
     "test1": "nightwatch --reporter html-reporter.js",
     "test2": "nightwatch --reporter html-reporter2.js",
-    "generateReport": "allure generate ./allure-results --clean && allure open"
+    "generateReport": "allure generate ./allure-results --clean && allure open",
+    "clean": "rimraf allure-results allure-report tests_output logs screenshots" 
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chromedriver": "^99.0.0",
-    "nightwatch": "^2.1.0",
+    "chromedriver": "^110.0.0",
+    "nightwatch": "^2.6.14",
     "nightwatch-allure": "^1.2.0",
-    "nightwatch-html-reporter": "^2.0.6"
+    "nightwatch-html-reporter": "^2.0.6",
+    "rimraf": "^4.1.2"
   },
   "devDependencies": {
     "fs": "^0.0.1-security",
